@@ -1,4 +1,3 @@
-# dockerfile inicial para la práctica 2.1
 FROM python:3.12-slim
 
 # Carpeta de trabajo dentro del contenedor
@@ -11,5 +10,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el resto del código
 COPY . .
 
-# Ejecutar el programa principal
-CMD ["python", "main.py"]
+# Ejecutar el programa principal (ahora en src/)
+CMD ["python", "src/main.py"]
